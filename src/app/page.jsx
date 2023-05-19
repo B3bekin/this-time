@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
-import Green from "../public/ai-quatros";
+import Orange from "/public/ai-dos.png"
+import Pink from "/public/ai-tres.png"
 
 function Home() {
   return (
@@ -19,23 +20,27 @@ function Home() {
 
             <div className="bg-red-400 flex justify-center py-40 ">
               <div className="bg-red-300 max-w-fit">
-                <Image src={Green}/>
+                <div className="m-8">
+                  <Image src={Pink} />
+                </div>
               </div>
             </div>
 
             <div className="bg-orange-300 flex justify-center py-40">
               <div className="bg-orange-200 max-w-fit">
-                <li>
-                  <ul>Peaches</ul>
-                  <ul>Peaches</ul>
-                  <ul>Peaches</ul>
-                </li>
+                <div className="m-8">
+                  <Image src={Orange} />
+                </div>
               </div>
             </div>
 
             <div className="bg-yellow-200 flex justify-center py-40">
-              <div className="bg-yellow-100 max-w-fit p-10 ">
-                <h3 className="">No grid today</h3>
+              <div className="bg-yellow-100 max-w-fit p-10 min-w-full flex items-center">
+                <div className="mx-auto">
+                  <h1 className="text-3xl font-bold ">Oops!</h1>
+                  <h3 className="text-xl font-medium py-1">No grid today, sorry 👃</h3>
+                </div>
+
               </div>
             </div>
 
