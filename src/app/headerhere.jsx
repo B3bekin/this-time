@@ -6,8 +6,8 @@ function Header() {
         <div className="bg-white flex justify-evenly items-center">
 
             <div className="font-extrabold text-4xl flex justify-end flex-col text-[#FF4A4A]">
-                <h1 className="bg-green-100">SVEZ</h1>
-                <h1 className="bg-green-200 max-w-fit">.SE</h1>
+                <h1 className="">SVEZ</h1>
+                <h1 className="max-w-fit">.SE</h1>
             </div>
 
             <ul className="text-2xl font-light">
