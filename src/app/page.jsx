@@ -1,4 +1,7 @@
 import React from "react";
+import Image from "next/image";
+
+import Green from "../public/ai-quatros";
 
 function Home() {
   return (
@@ -16,11 +19,7 @@ function Home() {
 
             <div className="bg-red-400 flex justify-center py-40 ">
               <div className="bg-red-300 max-w-fit">
-                <ul>
-                  <li>Peaches</li>
-                  <li>Peaches</li>
-                  <li>Peaches</li>
-                </ul>
+                <Image src={Green}/>
               </div>
             </div>
 
