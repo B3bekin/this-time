@@ -15,7 +15,7 @@ function Footer() {
 
                 <div className="col-span-1 pt-7">
                     <h2 className="pb-4 text-2xl">Svez.se</h2>
-                    <ul className="pl-4  text-gray-600 flex flex-col">
+                    <ul className="pl-4 font-[350] text-gray-600 flex flex-col leading-loose">
                         <li>O nás</li>
                         <li>Kontakt</li>
                         <li>Časté dotazy</li>
@@ -30,21 +30,27 @@ function Footer() {
 
                 <div className="col-span-1 pt-7">
                     <h2 className="pb-4 text-2xl">Svez.se pro firmy</h2>
-                    <ul className="pl-4 text-gray-600 flex flex-col">
+                    <ul className="pl-4 text-gray-600 flex flex-col font-[350] leading-loose">
                         <li>Pro firmy</li>
                         <li>Rozvoz zásilek</li>
                     </ul>
                 </div>
 
                 <div className="col-span-1">
-                    <div className="pt-10 pb-4">
-                        <div className="font-extrabold text-7xl flex flex-col justify-end text-[#FF4A4A]">
-                            <div className="">svez</div>
-                            <div className="">.se</div>
+                    <div className="pt-10 pb-10">
+                        <div className="flex">
+                            <div className="flex-grow" />
+                            <div className="font-extrabold text-[5rem] leading-[0.75] text-[#FF4A4A]">
+                                <div className="flex justify-end">svez</div>
+                                <div className="flex justify-end">.se</div>
+                            </div>
+                            <div className="flex-grow" />
                         </div>
                     </div>
 
-                    <div className="flex flex-row gap-4 pb-5 ">
+                    <div className="flex gap-4 pb-5 ">
+                        <div className="flex-grow" />
+
                         <div className="bg-white p-2 rounded-full p-15">
                             <Image src={Fcbk} width={35} height={35} />
                         </div>
@@ -60,9 +66,11 @@ function Footer() {
                         <div className="bg-white p-2 rounded-full">
                             <Image src={Twtr} width={35} height={35} />
                         </div>
+
+                        <div className="flex-grow" />
                     </div>
 
-                    <div className="text-[#FF4A4A] font-normal pl-5 text-2xl">#SVEZSE</div>
+                    <div className="text-[#FF4A4A] text-center font-normal pl-5 text-2xl">#SVEZSE</div>
                 </div>
 
                 <div className="col-span-1" />

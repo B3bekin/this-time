@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
 
     return (
-        <div className="bg-white flex justify-evenly items-center">
+        <div className="bg-white flex sticky justify-evenly items-center">
 
             <div className="font-extrabold text-4xl flex justify-end flex-col text-[#FF4A4A]">
                 <h1 className="">SVEZ</h1>
