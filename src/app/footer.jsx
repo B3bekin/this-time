@@ -50,7 +50,7 @@ function Footer() {
                         </div>
 
                         <div className="bg-white rounded-full">
-                            <Image src={Ins} width={20} height={20} />
+                            <Image src={Inst} width={20} height={20} />
                         </div>
 
                         <div className="bg-white rounded-full">
