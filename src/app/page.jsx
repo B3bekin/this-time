@@ -34,8 +34,6 @@ function Home() {
                 <Image src={Phone} width={30} height={25} alt="phone-call" />
                 <p> 222 111 000</p>
               </div>
-
-
             </div>
 
             <div className="bg-white text-[#FF4A4A] tracking-wide py-3 px-5 font-bold text-2xl rounded-md max-w-fit">
@@ -53,7 +51,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="col-span-3">
+        <div className="col-span-2">
           <Image src={Car} width={1024} height={525} className="z-[2] px-auto" />
         </div>
 
