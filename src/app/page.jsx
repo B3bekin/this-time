@@ -3,7 +3,10 @@ import Header from "./headerhere";
 import Image from "next/image";
 import Footer from "./footer";
 
-import Car from "/public/sayeera.jpg"
+import Apple from "/public/apple-logo.png"
+import Android from "/public/google-play.png"
+
+import Car from "/public/sayeera-group.png"
 import Cars from "/public/sayeeras.jpg"
 import Phone from "/public/call.png"
 
@@ -27,7 +30,7 @@ function Home() {
 
           <p className="text-white pb-2 text-xl">Objednejte si svoji jízdu:</p>
 
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 content-stretch">
             <div className="bg-white text-[#FF4A4A] tracking-wide py-3 px-5 font-extrabold text-2xl rounded-md max-w-fit">
               {/*<p>icon</p>*/}
               <div className="flex justify-between gap-5">
@@ -44,15 +47,24 @@ function Home() {
               <p>Stáhnout aplikaci</p>
             </div>
 
-            <div className="flex flex-row  gap-2">
-              <div className="bg-black border-solid border-2 rounded-md border-yellow-500 text-white py-1 px-3 font-thin max-w-fit">Google play</div>
-              <div className="bg-black border-solid border-2 rounded-md border-yellow-500 text-white py-1 px-3 font-thin max-w-fit">Apple store</div>
+            <div className="flex flex-row gap-2">
+              <div className="">
+                <div className="bg-black border-solid border-2 rounded-md border-yellow-500 text-white py-1 px-3 font-thin max-w-fit flex flex-row gap-1">
+                  <Image src={Android} width={20} height={20} /> Google Play
+                </div>
+              </div>
+
+              <div className="">
+                <div className="bg-black border-solid border-2 rounded-md border-yellow-500 text-white py-1 px-3 font-thin max-w-fit flex flex-row gap-1">
+                 <Image src={Apple} width={20} height={20} /> App Store
+                </div> 
+              </div>
             </div>
           </div>
         </div>
 
         <div className="col-span-2">
-          <Image src={Car} width={1024} height={525} className="z-[2] px-auto" />
+          <Image className="z-[2] px-auto object-fill" src={Car} />
         </div>
 
       </div>
@@ -74,9 +86,9 @@ function Home() {
             Jízdné můžeš zaplatit hotově nebo kartou. Všechny vozy mají platební terminál.
           </p>
 
-          <Image className="flex mx-auto pb-16" src={Cars} alt="auta" />
+          <Image className="object-contain" src={Cars} alt="auta" />
 
-          <div className="grid grid-cols-3 pb-20">
+          <div className="grid grid-cols-3 pt-16 pb-20">
             <div>
               <Image src={Money} />
               <h1 className="font-semibold pt-3 pb-4 text-3xl leading-10">Economy</h1>
@@ -91,17 +103,16 @@ function Home() {
             </div>
             <div>
               <Image src={Plane} />
-              <h1 className="font-semibold pt-3 pb-4 text-3xl leading-10">Economy</h1>
+              <h1 className="font-semibold pt-3 pb-4 text-3xl leading-10">Airport transport</h1>
               <p className="text-gray-600 pb-7">Pro jízdy z letiště a na letiště využij nejjednodušší způsob přepravy. Jsme officiální taxislužbou na Letišti Václava Havla, kde jsou naše vozy k dispozici přímo před terminály. </p>
             </div>
           </div>
-
 
         </div>
 
         <div className="col-span-1" />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }
