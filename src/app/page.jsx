@@ -51,8 +51,6 @@ function Home() {
               <div className="bg-black border-solid border-2 rounded-md border-yellow-500 text-white py-1 px-3 font-thin max-w-fit">Apple store</div>
             </div>
           </div>
-
-
         </div>
 
         <div className="col-span-3">
@@ -71,31 +69,31 @@ function Home() {
             Jezděte po Praze se Svez.se
           </div>
 
-          <p className="text-gray-600 leading-10">
+          <p className="text-gray-600 leading-10 pb-16">
             Nízké ceny nebo luxusní jízda. Vyber si podle svých představ.<br />
             Klademe důraz především na kvalitu služby a tvou bezpečnost.<br />
             Vždy se máš na koho obrátit. Všechny jízdy jsou pod neustálým dozorem dispečinku, který je připraven Ti pomoci.<br />
             Jízdné můžeš zaplatit hotově nebo kartou. Všechny vozy mají platební terminál.
           </p>
 
-          <Image className="flex mx-auto" src={Cars} alt="auta" />
+          <Image className="flex mx-auto pb-16" src={Cars} alt="auta" />
 
-          <div className="flex justify-between pb-20">
+          <div className="grid grid-cols-3 pb-20">
             <div>
               <Image src={Money} />
-              <h1 className="font-bold pt-3 pb-4">Economy</h1>
+              <h1 className="font-semibold pt-3 pb-4 text-3xl leading-10">Economy</h1>
               <p className="text-gray-600 pb-7">Rychlé přistavení díky skvělé dostupnosti vozů za výhodnou cenu.</p>
-              <div className="text-white bg-[#FF4A4A] mx-5 my-3">Objednat Economy</div>
+              <div className="text-white bg-[#ea6565] px-8 py-2 rounded-md max-w-fit">Objednat Economy</div>
             </div>
             <div>
               <Image src={Dia} />
-              <h1 className="font-bold pt-3 pb-4">Business</h1>
+              <h1 className="font-semibold pt-3 pb-4 text-3xl leading-10">Business</h1>
               <p className="text-gray-600 pb-7">Komfortní vozy a profesionální řidiči. Důraz na kvalitu služby, pečlivý výběr řidičů a pravidelné kontroly vozů zajišťují ten nejlepší servis pro zákazníka.</p>
-              <div className="text-white bg-[#FF4A4A] mx-5 my-3">Objednat Business</div>
+              <div className="text-white bg-[#ea6565] px-8 py-2 rounded-md max-w-fit">Objednat Business</div>
             </div>
             <div>
-              <Image src={Dia} />
-              <h1 className="font-bold pt-3 pb-4">Economy</h1>
+              <Image src={Plane} />
+              <h1 className="font-semibold pt-3 pb-4 text-3xl leading-10">Economy</h1>
               <p className="text-gray-600 pb-7">Pro jízdy z letiště a na letiště využij nejjednodušší způsob přepravy. Jsme officiální taxislužbou na Letišti Václava Havla, kde jsou naše vozy k dispozici přímo před terminály. </p>
             </div>
           </div>
@@ -105,6 +103,7 @@ function Home() {
 
         <div className="col-span-1" />
       </div>
+      <Footer/>
     </div>
   )
 }
