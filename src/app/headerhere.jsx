@@ -21,13 +21,15 @@ function Header() {
                         <li>Pro řidiče</li>
                         <li>Kontakt</li>
                         <div className="flex flex-row gap-3">
-                            <Image src={TaPrava} width={18} height={14}/>
-                            <Image src={Down} width={16} height={8}/>
+                            <Image src={TaPrava} width={18} height={14} />
+                            <Image src={Down} width={16} height={8} />
                         </div>
                     </ul>
                 </div>
 
-                <div className="bg-[#ea6565] text-white py-2 px-5 rounded-md text-center font-[350] flex align-bottom">Objednat jízdu</div>
+                <div className="bg-[#ea6565] text-white py-2 px-5 rounded-md text-center font-[350] align-bottom">
+                    <p>Objednat jízdu</p>
+                </div>
 
             </div>
         </div>

@@ -21,33 +21,33 @@ function Home() {
 
       <Header />
 
-      <div className="bg-[#FF4A4A] grid grid-cols-5 pt-16 pb-8">
-        <div className="col-span-1 " />
+      <div className="bg-[#FF4A4A] lg:grid lg:grid-cols-5 lg:pt-16 lg:pb-8">
+        <div className="col-span-1 overflow-hidden" />
 
         <div className="col-span-2 pl-10">
-          <h1 className="text-white font-extrabold text-4xl">Spolehlivé a bezpečné </h1>
-          <h1 className="text-white font-extrabold text-4xl pt-3 pb-14">TAXI po Praze a okolí</h1>
+          <h1 className="text-white font-extrabold text-2xl pt-10 text-center lg:text-left lg:pt-0 lg:text-4xl">Spolehlivé a bezpečné </h1>
+          <h1 className="text-white font-extrabold text-2xl pt-3 pb-14 text-center lg:text-left lg:text-4xl">TAXI po Praze a okolí</h1>
 
-          <p className="text-white pb-2 text-xl">Objednejte si svoji jízdu:</p>
+          <p className="text-white pb-2 text-xl text-center lg:text-left">Objednejte si svoji jízdu:</p>
 
-          <div className="flex flex-col gap-3 content-stretch">
-            <div className="bg-white text-[#FF4A4A] tracking-wide py-3 px-5 font-extrabold text-2xl rounded-md max-w-fit">
-              {/*<p>icon</p>*/}
-              <div className="flex justify-between gap-5">
+          <div className="flex flex-col gap-3 place-items-center lg:place-items-start">
+            <div className="bg-white text-[#FF4A4A] tracking-wide py-3 px-5 font-extrabold text-2xl rounded-md min-w-full lg:min-w-fit lg:max-w-fit">
+              <div className="flex justify-between lg:gap-5">
                 <Image src={Phone} width={30} height={25} alt="phone-call" />
                 <p> 222 111 000</p>
+                <div/>
               </div>
             </div>
 
-            <div className="bg-white text-[#FF4A4A] tracking-wide py-3 px-5 font-bold text-2xl rounded-md max-w-fit">
-              <p> Objednejte online</p>
+            <div className="bg-white text-[#FF4A4A] tracking-wide py-3 px-5 font-bold text-2xl rounded-md min-w-full lg:min-w-fit lg:max-w-fit">
+              <p className="text-center "> Objednejte online</p>
             </div>
 
-            <div className="bg-white text-[#FF4A4A] tracking-wide py-3 px-5 font-bold text-2xl rounded-md max-w-fit">
-              <p>Stáhnout aplikaci</p>
+            <div className="bg-white text-[#FF4A4A] tracking-wide py-3 px-5 font-bold text-2xl rounded-md min-w-full lg:min-w-fit lg:max-w-fit">
+              <p className="text-center">Stáhnout aplikaci</p>
             </div>
 
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row justify-evenly pb-5 min-w-full lg:pb-0 lg:min-w-fit lg:gap-2 ">
               <div className="">
                 <div className="bg-black border-solid border-2 rounded-md border-yellow-500 text-white py-1 px-3 font-thin max-w-fit flex flex-row gap-1">
                   <Image src={Android} width={20} height={20} /> Google Play
@@ -63,7 +63,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="col-span-2">
+        <div className="col-span-2 ">
           <Image className="z-[2] px-auto object-fill" src={Car} />
         </div>
 
